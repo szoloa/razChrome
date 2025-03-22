@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="section">
+    <h3>上传新TXT文件</h3>
+    <input type="file" id="fileInput" accept=".txt" />
+    <p>文件格式要求：<br>每行一个条目，格式：标题 链接</p>
+  </div>
+
+  <div class="section">
+    <h3>已上传文件</h3>
+    <div id="fileList">正在加载文件列表...</div>
+  </div>
+
+  <div id="status" class="status"></div>
+  
+  <script src="options.js"></script>
+</body>
+</html>

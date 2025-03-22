@@ -1,0 +1,63 @@
+body { 
+    padding: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  }
+  
+  .section { 
+    margin-bottom: 25px; 
+    padding: 15px; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+  }
+  
+  h3 { 
+    margin-top: 0; 
+    color: #1a73e8; 
+  }
+  
+  #fileList { 
+    margin: 15px 0; 
+  }
+  
+  .file-item { 
+    margin: 10px 0; 
+    padding: 12px; 
+    border: 1px solid #dadce0; 
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  
+  .file-item:hover { 
+    background: #f8f9fa; 
+  }
+  
+  .file-radio:checked + label {
+    font-weight: bold;
+    color: #1a73e8;
+  }
+  
+  .status {
+    padding: 12px;
+    border-radius: 6px;
+    margin: 15px 0;
+    display: none;
+  }
+  
+  .success { 
+    background: #e6f4ea; 
+    color: #137333; 
+  }
+  
+  .error { 
+    background: #fce8e6; 
+    color: #c5221f; 
+  }
+  
+  .empty-state {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    border: 2px dashed #eee;
+  }

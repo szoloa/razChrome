@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "随机链接打开器",
+  "version": "1.0",
+  "permissions": ["storage", "commands", "tabs"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-random-link": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "从选择的TXT文件中随机打开链接"
+    }
+  },"icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["options/*.css"],
+    "matches": ["<all_urls>"]
+  }]
+}
