@@ -21,9 +21,6 @@ chrome.storage.local.get(['txtFiles', 'activeFileIndex'], (data) => {
   }
 
   const randomIndex = Math.floor(Math.random() * activeFile.content.length);
-//   chrome.tabs.create({ url: activeFile.content[randomIndex].url });
-//   window.close();
-// });
 
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
   const tabId = tabs[0].id;
